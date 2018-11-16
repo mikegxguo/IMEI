@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imei_info">IMEI INFO: </string>
+    <string name="app_name">IMEI</string>
+    <string name="read_imei">READ</string>
+    <string name="change_imei">CHANGE</string>
+    <string name="close_activity">EXIT</string>
+
+</resources>

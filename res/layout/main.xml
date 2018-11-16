@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/imei_info" />
+
+    <EditText
+        android:id="@+id/edit_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:background="#000000"
+        android:editable="false"
+        android:minHeight="50dip"
+        android:minWidth="200dip"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/read_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_response"
+        android:clickable="true"
+        android:onClick="onReadIMEI"
+        android:text="@string/read_imei" />
+
+    <Button
+        android:id="@+id/change_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_response"
+        android:layout_toRightOf="@+id/read_imei"
+        android:clickable="true"
+        android:onClick="onChangeIMEI"
+        android:text="@string/change_imei" />
+
+    <Button
+        android:id="@+id/close_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_response"
+        android:layout_toRightOf="@+id/change_imei"
+        android:clickable="true"
+        android:onClick="onCloseIMEI"
+        android:text="@string/close_activity" />
+
+</RelativeLayout>
